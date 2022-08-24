@@ -19,7 +19,7 @@ const hamStyle2={
 
 
 function Navbar() {
-    const[Clicked,SetClicked]=useState(true);
+    const[Clicked,SetClicked]=useState(false);
 
     return (<>
         <nav>
@@ -27,10 +27,9 @@ function Navbar() {
             <img src={logo} alt="logo" style={logoStyle}/>
             <div className="navmenu"  style={Clicked?hamStyle1:hamStyle2}>
             <ul className="">
-                <li><a href="#">Home</a></li>
                 <li><a href="#">About</a></li>
-                <li><a href="#">Projects</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="">Projects</a></li>
+                <li><a href="../img/0101.pfd" target={"_blank"} download>Contact</a></li>
             </ul>
             <div className="socialMedia">
                 <i className="fa-2x fa-brands fa-github"></i>

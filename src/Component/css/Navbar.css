@@ -7,7 +7,9 @@
 
 nav{
     position: fixed;
-    background-color:#319DA0;
+    top: 0;
+    left: 0;
+    background-color:#3d9aa1;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -29,17 +31,19 @@ nav ul li{
 }
 nav ul li a{
     text-decoration: none;
-    color: black;
+    color: white;
     transition: all .5s ease; 
 }
 nav ul li a:hover{
-    color: #FFD39A;
+    color: black;
 }
 nav div i{
+    transition: all 1s ease-in-out;
     padding: 0 10px 0 0;
+    color: white;
 }
 nav div .fa-2x:hover{
-    color: #FFD39A;
+    color: black;
 }
 nav .hamMenu{
     display: none;
@@ -61,7 +65,7 @@ nav .navmenu{
         height: 100vh;
         position: absolute;
         z-index: 1;
-        background-color: #319DA0;
+        background-color:  #3d9aa1;
         width: 70%;
         top: 0;
         padding: 100px 0;
@@ -81,7 +85,7 @@ nav .navmenu{
         padding: 4px 10px;
         border-bottom: 1px solid black;
     }nav .navmenu ul li a{
-        color: black;
+        color: white;
     }
     nav ul li a:hover{
         color: #FFD39A;
@@ -94,7 +98,7 @@ nav .navmenu{
     nav .hamMenu{
         display: block;
         position: absolute;
-        z-index: 100;
+        z-index: 10000000;
         top: 20px;
         right: 20px;
     }

@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');*{
+   padding: 0;
+   margin: 0;
+   box-sizing: borde
+   
+   sans-serif;
+}
+.homediv{
+    background-color: #ebf0f5; 
+    margin-top: 100px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+ }
+.homedivLeft{
+   padding: 20px;
+
+}
+.homedivLeft img{
+   object-fit: contain;
+   max-width: 500px;
+   height: 330px;
+   
+}
+.homedivLeft img{
+   margin: auto;
+}
+.homedivRight{
+   padding: 20px;
+   line-height: 30px;
+}
+.techstack{
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+   align-items: center;
+}
+.techstackd{
+
+   padding: 10px 60px ;
+   background-color: #3d9aa1;
+   
+   
+}
+.card{
+   width: 200px;
+   height: 280px;
+   padding: 10px;
+   overflow: hidden;
+   border-radius: 30px;
+   background-color: gainsboro;
+   text-align: center;
+   transition: all 2s ease-in-out;
+}
+.card img{
+   width: 100px;
+   border-radius: 30px;
+   
+}
+.card:hover{ 
+   transform: rotateZ(180deg);
+   transform: rotateX(180deg);
+   transform: rotateY(180deg);
+}
+
+ /* .homdivLeft{X
+    padding: 40px;
+    overflow: hidden;
+    
+ }
+ .homedivLeft img{
+    border-radius: 30px;
+    padding: 10px;
+    object-fit: contain;
+    width: 370px;
+    margin: auto;
+    overflow: hidden;
+
+ }
+ .homedivRight{
+    padding: 10px 20px;
+    line-height: 30px;
+ } */
+ .btns{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content:start;
+ }
+ .btns button{
+    width: 300px;
+    height: 60px;
+ }
+ .btns .a{
+    margin-right: 10px;
+    background-color: gray;
+    transition: all 1s ease-in-out;
+ }
+ .btns .a:hover{
+    background-color:  #3d9aa1
+ } 
+
+@media(max-width:500px)
+{
+    .homediv{
+        flex-direction: column;
+    }
+    /* .btns {
+        flex-direction: column;
+        justify-content: center;
+        align-items: space-around;
+        text-align: center;
+
+    }
+    .btns button{
+        margin: 10px 0;
+    } */
+    .btns{
+      flex-direction: column;
+justify-content:center;    }
+    .homedivLeft{
+      align-items: center;
+    }
+    .homedivRight{
+      text-align: center;
+    }
+    .techstack{
+      justify-content: center;
+    }
+}
